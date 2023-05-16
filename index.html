@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hakatons</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h4 id="logo_title">READ LIST</h4>
+        <button id="add_btn">ADD BOOK</button>
+      </div>
+      <div class="searcher">
+        <input
+          type="text"
+          placeholder="Search"
+          class="searcher_item"
+          id="search_input"
+        />
+        <button class="searcher_item" id="search_icon">
+          <img
+            src="https://cdn.onlinewebfonts.com/svg/img_456268.png"
+            alt="srch-but"
+            id="searcher_icon_img"
+          />
+        </button>
+      </div>
+    </div>
+    <!-- modal ==================== -->
+    <div class="main-modal">
+      <div class="inner-modal">
+        <div class="all-inp">
+          <input placeholder="Enter photo" type="text" id="image" />
+          <input placeholder="enter Book title" type="text" id="input-title" />
+          <input placeholder="enter Author" type="text" id="input-author" />
+          <input placeholder="enter Genre" type="text" id="input-genre" />
+          <input placeholder="enter Date" type="text" id="input-date" />
+          <input placeholder="enter Description" type="text" id="input-descr" />
+        </div>
+        <div class="btn-modal">
+          <button class="btn-close">Close</button>
+          <button class="btn-save">Save</button>
+          <button class="btn-edit">Edit</button>
+        </div>
+      </div>
+    </div>
+    <!-- modal ==================== -->
+
+    <div class="list"></div>
+
+    <!-- ! Pagination start -->
+
+    <div class="paging">
+      <ul class="pag_btn">
+        <li id="prev"><a class="page-link" href="#">Previous</a></li>
+        <div class="page-list"></div>
+        <li id="next"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+    <!-- ! Pagination end -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
